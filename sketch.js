@@ -9,6 +9,9 @@ function setup() {
 
 function draw() {
     background(0);
+    
+    paddle.pong(ball);
+    
     ball.update();
     paddle.update();
     ball.show();

@@ -17,4 +17,11 @@ function Paddle() {
         this.x = mouseX;
     };
     
+    this.pong = function(ball) {
+        if((ball.x <= this.x + this.width && ball.x >= this.x) && ball.y >= this.y) {
+            ball.isPaddleHit = true;
+            console.log("PONG");
+        }
+        
+    }
 }
