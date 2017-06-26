@@ -19,7 +19,7 @@ function Paddle() {
     
     this.pong = function(ball) {
         if((ball.x <= this.x + this.width && ball.x >= this.x) && ball.y >= this.y) {
-            ball.isPaddleHit = true;
+            ball.isPaddleOrBrickHit = true;
             console.log("PONG");
         }
         
